@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rohit Patel — UI/UX & Graphic Designer Portfolio">
+  <title>Rohit Patel — UI/UX & Graphic Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">ROHIT<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-btn" href="#contact">Let's Talk ↗</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">UI/UX DESIGNER · GRAPHIC DESIGNER</p>
+        <h1>Designing digital experiences that feel <em>simple.</em></h1>
+        <p class="intro">Hi, I'm Rohit — a designer focused on clean interfaces, strong visual systems, and thoughtful user experiences.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">View My Work ↘</a>
+          <a class="btn secondary" href="https://www.behance.net/pixelrohit" target="_blank" rel="noopener">Behance ↗</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="orbit"></div>
+        <div class="hero-initials">RP</div>
+        <p>Available for<br><strong>design opportunities</strong></p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects that solve problems.</h2>
+      </div>
+      <div class="projects">
+        <article class="project large">
+          <div class="project-art art-one"><span>01</span><div class="mock-phone">FOOD<br><b>DELIVERY</b><small>UI/UX CASE STUDY</small></div></div>
+          <div class="project-info"><p>UI/UX · MOBILE APP</p><h3>Food Delivery Experience</h3><a href="#contact">View Case Study ↗</a></div>
+        </article>
+        <article class="project">
+          <div class="project-art art-two"><span>02</span><div class="dashboard">SHOP<br><b>SMARTER</b><small>E-COMMERCE UI</small></div></div>
+          <div class="project-info"><p>UI/UX · WEB DESIGN</p><h3>E-commerce Dashboard</h3><a href="#contact">View Case Study ↗</a></div>
+        </article>
+        <article class="project">
+          <div class="project-art art-three"><span>03</span><div class="brand-card">NOVA<br><small>BRAND IDENTITY</small></div></div>
+          <div class="project-info"><p>GRAPHIC DESIGN · BRANDING</p><h3>Brand Identity System</h3><a href="#contact">View Project ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div><p class="eyebrow">ABOUT ME</p><h2>Good design is clear, useful, and memorable.</h2></div>
+      <div class="about-copy">
+        <p>I'm Rohit Patel, a UI/UX and Graphic Designer building modern digital experiences and visual identities.</p>
+        <p>I enjoy turning ideas into clean layouts, intuitive user flows, and polished visual systems. My toolkit includes Figma, Adobe Photoshop, Adobe Illustrator, and modern web design workflows.</p>
+        <a class="text-link" href="https://www.behance.net/pixelrohit" target="_blank" rel="noopener">Explore my Behance ↗</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-head"><p class="eyebrow">EXPERTISE</p><h2>What I work with.</h2></div>
+      <div class="skill-grid">
+        <div><span>01</span><h3>UI/UX Design</h3><p>Wireframes, user flows, prototypes, usability, responsive interfaces and design systems.</p></div>
+        <div><span>02</span><h3>Visual Design</h3><p>Typography, grids, color systems, composition and high-quality interface visuals.</p></div>
+        <div><span>03</span><h3>Graphic Design</h3><p>Branding, social media creatives, posters, marketing visuals and identity systems.</p></div>
+        <div><span>04</span><h3>Tools</h3><p>Figma · Photoshop · Illustrator · Adobe Creative Cloud · Framer · GitHub</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Have a project or opportunity?</h2>
+      <p>Let's create something useful, clear and memorable.</p>
+      <a class="email" href="mailto:your@email.com">your@email.com ↗</a>
+      <div class="socials"><a href="https://www.behance.net/pixelrohit" target="_blank" rel="noopener">Behance</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Rohit Patel</span><span>UI/UX · Graphic Design</span></footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+    }));
+  </script>
+</body>
+</html>
